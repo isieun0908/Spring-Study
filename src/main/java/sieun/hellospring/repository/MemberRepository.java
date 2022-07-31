@@ -1,5 +1,6 @@
 package sieun.hellospring.repository;
 
+import org.springframework.stereotype.Repository;
 import sieun.hellospring.domain.Member;
 
 import java.util.List;
