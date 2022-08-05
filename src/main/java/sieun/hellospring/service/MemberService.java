@@ -2,6 +2,7 @@ package sieun.hellospring.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import sieun.hellospring.domain.Member;
 import sieun.hellospring.repository.MemberRepository;
 import sieun.hellospring.repository.MemoryMemberRepository;
@@ -9,6 +10,7 @@ import sieun.hellospring.repository.MemoryMemberRepository;
 import java.util.List;
 import java.util.Optional;
 
+@Transactional
 public class MemberService {
 
     private final MemberRepository memberRepository;
